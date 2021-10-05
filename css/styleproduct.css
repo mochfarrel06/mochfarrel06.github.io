@@ -1,0 +1,352 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    quotes: none;
+    text-decoration: unset;
+    outline: none;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+
+body{
+    background-color: #F6F6F6;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    color: #707070;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+ul li a{
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: #707070;
+    display: flex;
+    justify-content: start;
+}
+
+ul li a:hover{
+    color: #010101;
+    font-weight: bold;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+/* Menu hambuger */
+.menu-toggler{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    position: relative;
+}
+
+.menu-toggler input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menu-toggler span{
+    display: block;
+    background-color: black;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.menu-toggler span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggler span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggler input:checked ~ span:nth-child(2){
+    background-color: #707070;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggler input:checked ~ span:nth-child(4){
+    background-color: #707070;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggler input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Akhir nav */
+
+
+/* Section */
+section{
+    display: block;
+    height: 480px;
+    margin-bottom: 50px;
+}
+
+section .story{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+section .story .atas{
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .story .atas p{
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: #615C5C;
+    letter-spacing: 1px;
+}
+
+section .atas img{
+    max-height: 270px;
+}
+
+section .story h2{
+    font-size: 45px;
+    color: #615C5C;
+    font-family: 'Comfortaa', cursive;
+}
+
+.get-ayam{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kartu{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 220px;
+    /* border: 1px solid #707070; */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #E2DDDD;
+    box-shadow: 2px 2px 1px #504949;
+}
+
+.card .header{
+    height: 130px;
+    background-color: #F27E0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .header img{
+    max-width: 150px;
+}
+
+.card .konten{
+    padding-bottom: 30px;
+    
+}
+
+.card .konten p{
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #F27E0B;
+    margin-top: 20px;
+}
+
+.card.zoom:hover{
+    transform: scale(1.15);
+    box-shadow: none;
+}
+
+section .get-ayam h2{
+    font-size: 45px;
+    color: #615C5C;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+footer .bawah{
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    color: #707070;
+    margin-top: 20px;
+}
+
+
+
+/* Responsive*/
+
+/* Ukuran Tablet */
+@media screen and (max-width:768px){
+    /* Navbar */
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        width: 60%;
+    }
+
+    /* Section */
+    section{
+        height: 600px;
+        /* background-color: blue; */
+    }
+
+    section .story{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section .story .atas{
+        order: 2;
+        margin-top: -30px;
+    }
+
+    section .story h2{
+        order: 1;
+        margin-top: 30px;
+    }
+
+    .get-ayam{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .get-ayam .kartu{
+        order: 2;
+    }
+
+    .get-ayam h2{
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    section .kartu{
+        display: flex;
+        align-content: space-between;
+    }
+
+    .card{
+        max-width: 160px;
+    }
+
+
+}
+
+/* Ukuran smartphone */
+@media screen and (max-width: 576px){
+    .menu-toggler{
+        display: flex;
+    }
+    nav{
+        display: fixed;
+        top: 0;
+
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* z-index: 9999; */
+        z-index: 0;
+        background-color: #F6F6F6;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+ 
+    /* Section */
+    section{
+        height: 1200px;
+    }
+
+    section .story .atas{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .story h2{
+        margin-bottom: 20px;
+        justify-items: center;
+    }
+
+    section h2{
+        margin-top: 20px;
+    }
+
+    section .kartu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-bottom: 30px;
+        max-width: 200px;
+    }
+}

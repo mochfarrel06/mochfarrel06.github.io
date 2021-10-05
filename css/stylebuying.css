@@ -1,0 +1,350 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    quotes: none;
+    text-decoration: unset;
+    outline: none;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+
+body{
+    background-color: #F6F6F6;
+    overflow: visible;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    color: #707070;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+ul li a{
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: #707070;
+    display: flex;
+    justify-content: start;
+}
+
+ul li a:hover{
+    color: #010101;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+
+/* Menu hambuger */
+.menu-toggler{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    position: relative;
+}
+
+.menu-toggler input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menu-toggler span{
+    display: block;
+    background-color: black;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.menu-toggler span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggler span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggler input:checked ~ span:nth-child(2){
+    background-color: #707070;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggler input:checked ~ span:nth-child(4){
+    background-color: #707070;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggler input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Akhir nav */
+
+/* Section */
+section{
+    display: flex;
+}
+
+section .makanan{
+    width: 100%;
+    margin-top: 30px;
+}
+
+section .makanan .logo{
+    text-align: center;
+}
+
+section .makanan .logo h2{
+    font-size: 50px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 30px;
+}
+
+.kartu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 2px 2px 2px 2px #504949; */
+}
+
+.card{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 1px #504949;
+    margin-bottom: 100px;
+}
+
+
+.card .header{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFAEAE;
+}
+
+.header img{
+    width: 150px;
+}
+
+.header .satu,
+.header .dua,
+.header .tiga{
+    width: 40px;
+}
+
+.card .detail{
+    height: 200px;
+    background-color: #E8E7E7;
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.desk{
+    width: 50%;
+}
+
+.price{
+    width: 50%;
+}
+
+h4{
+    text-align: center;
+    font-size: 25px;
+    color: #707070;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 15px;
+    color: #5E2A31;
+    letter-spacing: 1px;
+    word-wrap: initial;
+    text-align: center;
+}
+
+.price p{
+    font-size: 30px;
+    color: #EB1515;
+}
+/* Akhir Section */
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+    align-self: flex-end;
+}
+
+footer .bawah{
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    color: #707070;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+/* Responsive*/
+
+/* Ukuran Tablet */
+@media screen and (max-width:768px){
+    /* Navbar */
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        width: 60%;
+    }
+
+    section .makanan .logo h2{
+        font-size: 40px;
+    }
+
+    .card{
+        margin-bottom: 70px;
+    }
+
+    .card .header{
+        height: 150px;
+    }
+
+    .header img{
+        width: 90px;
+    }
+
+    .header .satu,
+    .header .dua,
+    .header .tiga{
+        width: 20px;
+    }
+
+    .card .detail{
+        height: 150px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+    
+    .price p{
+        font-size: 25px;
+    }
+}
+
+/* Ukuran smartphone */
+@media screen and (max-width: 576px){
+    .menu-toggler{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* z-index: 9999; */
+        z-index: 0;
+        background-color: #F6F6F6;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .header img{
+        width: 70px;
+    }
+
+    .header .satu,
+    .header .dua,
+    .header .tiga{
+        width: 20px;
+    }
+
+    .card{
+        margin-bottom: 60px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

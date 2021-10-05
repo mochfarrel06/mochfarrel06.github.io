@@ -1,0 +1,344 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    quotes: none;
+    text-decoration: unset;
+    outline: none;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+
+body{
+    background-color: #F6F6F6;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    color: #707070;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+ul li a{
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: #707070;
+    display: flex;
+    justify-content: start;
+}
+
+ul li a:hover{
+    color: #010101;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+
+/* Menu hambuger */
+.menu-toggler{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    position: relative;
+}
+
+.menu-toggler input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menu-toggler span{
+    display: block;
+    background-color: black;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.menu-toggler span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggler span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggler input:checked ~ span:nth-child(2){
+    background-color: #707070;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggler input:checked ~ span:nth-child(4){
+    background-color: #707070;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggler input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Akhir nav */
+
+/* Section */
+section{
+    height: 480px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+section .kolom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section .kolom h3{
+    font-size: 53px;
+    font-family: 'Comfortaa', cursive;
+    color: #010101;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section .kolom p{
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: #707070;
+}
+
+section .kolom .order ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    text-align: center;
+    
+}
+
+section .kolom .order ul li{
+    display: block;
+    padding-right: 20px;
+}
+
+section .kolom .order ul li a{
+    font-size: 18px;
+}
+
+section .kolom .order ul li a:hover{
+    color: red;
+}
+
+a.tbl-biru{
+    background-color: #FF6D6D;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+section #home{
+    display: flex;
+    align-self: center;
+}
+
+section #home img{
+    max-height: 450px;
+}
+/* Akhir Section */
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+footer .bawah{
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    color: #707070;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive*/
+
+/* Ukuran Tablet */
+@media screen and (max-width:768px){
+    /* Navbar */
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        width: 60%;
+    }
+
+    /* Section */
+    section{
+        display: inline-block;
+    }
+
+    section .kolom h3{
+        font-size: 45px;
+        font-family: 'Comfortaa', cursive;
+        color: #010101;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    section .kolom p{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    section .kolom .order ul{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section #home{
+        display: flex;
+        justify-content: center;
+    }
+    
+    section #home img{
+        height: 300px;
+    }
+
+}
+
+/* Ukuran smartphone */
+@media screen and (max-width: 576px){
+    .menu-toggler{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* z-index: 9999; */
+        z-index: 0;
+        background-color: #F6F6F6;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    section .kolom h3{
+        font-size: 35px;
+        font-family: 'Comfortaa', cursive;
+        color: #010101;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    section .kolom .order ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section #home img{
+        height: 280px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
