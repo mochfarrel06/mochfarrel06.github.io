@@ -255,6 +255,10 @@ footer h4{
     body{
         overflow-x: hidden;
     }
+    .container{
+        width: 90%;
+    }
+
     .menu-toggler{
         display: flex;
     }
