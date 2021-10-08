@@ -13,6 +13,7 @@
 
 body{
     background-color: #F6F6F6;
+    overflow: auto;
 }
 
 .container{
@@ -202,6 +203,9 @@ footer h4{
 
 /* Ukuran Tablet */
 @media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
     /* Navbar */
     nav{
         display: flex;
