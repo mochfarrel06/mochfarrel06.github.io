@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-    width: 90%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -203,9 +203,9 @@ footer h4{
 
 /* Ukuran Tablet */
 @media screen and (max-width:768px){
-    body{
+    /* body{
         overflow-x: hidden;
-    }
+    } */
     /* Navbar */
     nav{
         display: flex;
@@ -255,7 +255,6 @@ footer h4{
 @media screen and (max-width: 576px){
     body{
         overflow-x: hidden;
-        width: 60%;
     }
     .menu-toggler{
         display: flex;
