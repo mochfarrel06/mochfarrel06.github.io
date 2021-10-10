@@ -210,18 +210,15 @@ p{
 
 /* Footer */
 footer{
-    display: flex;
-    justify-content: center;
-    /* margin-top: 20px; */
-    align-self: flex-end;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-footer .bawah{
+footer h4{
     font-size: 15px;
     font-family: 'Comfortaa', cursive;
     color: #707070;
-    /* margin-top: 20px; */
-    margin-bottom: 20px;
 }
 
 /* Responsive*/
@@ -318,6 +315,10 @@ footer .bawah{
 
     p{
         font-size: 13px;
+    }
+
+    footer h4{
+        font-size: 12px;
     }
 }
 

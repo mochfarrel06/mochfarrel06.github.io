@@ -217,17 +217,15 @@ section{
 
 /* Footer */
 footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    align-self: flex-end;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-footer .bawah{
+footer h4{
     font-size: 15px;
     font-family: 'Comfortaa', cursive;
     color: #707070;
-    margin-top: 20px;
 }
 
 
@@ -290,9 +288,8 @@ footer .bawah{
         transform: translateX(0);
     }
 
-    footer .bawah{
-        margin-top: 350px;
-        margin-bottom: 30px;
+    footer h4{
+        font-size: 12px;
     }
 
 }
