@@ -275,6 +275,9 @@ footer h4{
 
 /* Ukuran smartphone */
 @media screen and (max-width: 576px){
+    body{
+        overflow-x: hidden;
+    }
     .menu-toggler{
         display: flex;
     }
@@ -309,12 +312,12 @@ footer h4{
         width: 20px;
     }
 
-    .card{
-        margin-bottom: 60px;
-    }
-
     p{
         font-size: 13px;
+    }
+
+    section{
+        height: 1500px;
     }
 
     footer h4{

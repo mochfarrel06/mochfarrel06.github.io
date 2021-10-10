@@ -252,18 +252,15 @@ footer h4{
         padding-left: 0;
         margin-top: 20px;
     }
-
-    footer .bawah{
-        margin-top: 240px;
-        margin-bottom: 30px;
-    }
-
     
 
 }
 
 /* Ukuran smartphone */
 @media screen and (max-width: 576px){
+    body{
+        overflow-x: hidden;
+    }
     .menu-toggler{
         display: flex;
     }
@@ -286,6 +283,10 @@ footer h4{
     nav ul.slide{
         opacity: 1;
         transform: translateX(0);
+    }
+
+    section{
+        height: 800px;
     }
 
     footer h4{
