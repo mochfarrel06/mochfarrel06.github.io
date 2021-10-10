@@ -214,17 +214,15 @@ section .get-ayam h2{
 
 /* Footer */
 footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    align-self: flex-end;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-footer .bawah{
+footer h4{
     font-size: 15px;
     font-family: 'Comfortaa', cursive;
     color: #707070;
-    margin-top: 20px;
 }
 
 
@@ -291,13 +289,11 @@ footer .bawah{
 
 /* Ukuran smartphone */
 @media screen and (max-width: 576px){
+    body{
+        overflow-x: hidden;
+    }
     .menu-toggler{
         display: flex;
-    }
-    nav{
-        display: fixed;
-        top: 0;
-
     }
     nav ul{
         position: absolute;
@@ -348,5 +344,9 @@ footer .bawah{
     .card{
         margin-bottom: 30px;
         max-width: 200px;
+    }
+
+    footer h4{
+        font-size: 12px;
     }
 }
