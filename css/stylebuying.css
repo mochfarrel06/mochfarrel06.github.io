@@ -126,6 +126,8 @@ section .makanan{
 
 section .makanan .logo{
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 section .makanan .logo h2{
@@ -145,7 +147,7 @@ section .makanan .logo h2{
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 2px 2px 1px #504949;
+    box-shadow: 3px 3px 1px #504949;
     margin-bottom: 100px;
 }
 
@@ -155,11 +157,11 @@ section .makanan .logo h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #FFAEAE;
+    background-color: #F27E0B;
 }
 
 .header img{
-    width: 150px;
+    max-width: 120px;
 }
 
 .header .satu,
@@ -173,7 +175,7 @@ section .makanan .logo h2{
     background-color: #E8E7E7;
     display: flex;
     /* justify-content: center; */
-    padding-top: 10px;
+    padding-top: 30px;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
 }
@@ -195,9 +197,9 @@ h4{
 }
 
 p{
-    font-size: 15px;
+    font-size: 18px;
     color: #5E2A31;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     word-wrap: initial;
     text-align: center;
 }
@@ -210,9 +212,8 @@ p{
 
 /* Footer */
 footer{
-    padding: 20px;
     text-align: center;
-    margin-top: 50px;
+    height: 40px;
 }
 
 footer h4{
@@ -265,7 +266,7 @@ footer h4{
     }
     
     p{
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .price p{
@@ -302,6 +303,10 @@ footer h4{
         transform: translateX(0);
     }
 
+    .card .header{
+        height: 130px;
+    }
+
     .header img{
         width: 70px;
     }
@@ -313,7 +318,7 @@ footer h4{
     }
 
     p{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     section{
