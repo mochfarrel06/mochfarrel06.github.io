@@ -255,12 +255,13 @@ footer h4{
 @media screen and (max-width: 576px){
     body{
         overflow-x: hidden;
-        width: 100%;
+        /* width: 100%; */
         background-color: #FF6D6D;
     }
 
     .container{
         width: 100%;
+        background-color: aqua;
     }
 
     .menu-toggler{
