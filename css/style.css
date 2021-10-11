@@ -255,6 +255,7 @@ footer h4{
 @media screen and (max-width: 576px){
     body{
         overflow-x: hidden;
+        width: 100%;
     }
 
     .menu-toggler{
