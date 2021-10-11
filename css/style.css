@@ -256,6 +256,7 @@ footer h4{
     body{
         overflow-x: hidden;
         width: 100%;
+        background-color: #FF6D6D;
     }
 
     .container{
