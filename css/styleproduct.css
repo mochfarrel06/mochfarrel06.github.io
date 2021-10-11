@@ -160,13 +160,13 @@ section .story h2{
 }
 
 .kartu{
-    width: 800px;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
 
 .card{
-    width: 220px;
+    width: 30%;
     /* border: 1px solid #707070; */
     border-radius: 10px;
     overflow: hidden;
@@ -263,7 +263,8 @@ footer h4{
 
     .get-ayam{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .get-ayam .kartu{
@@ -278,10 +279,11 @@ footer h4{
     section .kartu{
         display: flex;
         align-content: space-between;
+        width: 100%;
     }
 
     .card{
-        max-width: 160px;
+        width: 30%;
     }
 
 
@@ -318,7 +320,7 @@ footer h4{
  
     /* Section */
     section{
-        height: 1200px;
+        height: 800px;
     }
 
     section .story .atas{
@@ -337,12 +339,12 @@ footer h4{
 
     section .kartu{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
     .card{
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
         max-width: 200px;
     }
 
