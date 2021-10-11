@@ -254,10 +254,11 @@ footer h4{
 @media screen and (max-width: 576px){
     body{
         overflow-x: hidden;
-    }
-    .container{
         width: 100%;
     }
+    /* .container{
+        width: 100%;
+    } */
 
     .menu-toggler{
         display: flex;
