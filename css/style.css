@@ -13,6 +13,7 @@
 
 body{
     background-color: #F6F6F6;
+    width: 100%;
 }
 
 .container{
@@ -254,10 +255,6 @@ footer h4{
 @media screen and (max-width: 576px){
     body{
         overflow-x: hidden;
-        width: 100%;
-    }
-    .container{
-        width: 100%;
     }
 
     .menu-toggler{
