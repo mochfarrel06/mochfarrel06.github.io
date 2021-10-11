@@ -256,9 +256,9 @@ footer h4{
         overflow-x: hidden;
         width: 100%;
     }
-    /* .container{
+    .container{
         width: 100%;
-    } */
+    }
 
     .menu-toggler{
         display: flex;
