@@ -262,6 +262,7 @@ footer h4{
     .container{
         width: 100%;
         height: 100%;
+        background-color: aqua;
     }
 
     .menu-toggler{
