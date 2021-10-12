@@ -257,6 +257,12 @@ footer h4{
         overflow-x: hidden;
         /* background-color: brown; */
         width: 100%;
+        background-color: cadetblue;
+    }
+    
+    .container{
+        width: 100%;
+        background-color: brown;
     }
 
     .menu-toggler{
