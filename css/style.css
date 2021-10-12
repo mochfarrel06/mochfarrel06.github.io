@@ -256,11 +256,13 @@ footer h4{
     body{
         overflow-x: hidden;
         /* background-color: brown; */
+        max-width: 100%;
         background-color: cadetblue;
     }
     
     .container{
-        width: 100%;
+        /* width: 100%; */
+        height: 100%;
         background-color: brown;
     }
 
