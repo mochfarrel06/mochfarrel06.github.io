@@ -289,12 +289,21 @@ footer h4{
         align-items: center;
         justify-content: space-evenly;
         /* z-index: 9999; */
-        z-index: 99;
+        z-index: 1;
         background-color: #F6F6F6;
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
     }
+
+    .menu-toggler input{
+        z-index: 999;
+    }
+
+    .menu-toggler span{
+        z-index: 999;
+    }
+
     nav ul.slide{
         opacity: 1;
         transform: translateX(0);
