@@ -91,7 +91,7 @@ li {
   position: fixed;
   display: flex;
   right: -100%;
-  top: 60px;
+  top: 65px;
   gap: 0;
   flex-direction: column;
   background-color: #082436;
@@ -131,6 +131,7 @@ section {
   padding: 5em 2em;
 }
 
+/* Home */
 .home {
   /* background-color: var(--putihbiru); */
   margin-top: 4em;
@@ -156,6 +157,25 @@ section {
 
 .home .container .home-text h1 span {
   color: var(--green1);
+  position: relative;
+}
+
+.home .container .home-text h1 span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--main-color);
+  border-left: 2px solid var(--green1);
+  animation: typing 2s steps(10) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -10px 0 10px;
+  }
 }
 
 .home .container .home-text h3 {
@@ -178,4 +198,190 @@ section {
   background-color: var(--green1);
   border-radius: 10px;
   font-size: 0.9em;
+  transition: all 0.3s ease-in-out;
 }
+
+.home .container .home-text a:hover {
+  background-color: var(--green2);
+  color: var(--main-color);
+}
+
+/* End Home */
+
+.about .container h2 {
+  text-align: center;
+  color: var(--putihbiru);
+  font-size: 1.8em;
+}
+
+.about .container .about-information h4 {
+  color: var(--putihbiru);
+  text-transform: uppercase;
+  margin-top: 4em;
+  letter-spacing: 1px;
+  margin-bottom: 1.8em;
+}
+
+.about .container .about-information p {
+  color: var(--putihbiru);
+  margin-bottom: 1em;
+  font-size: 0.8em;
+}
+
+.about .container .about-experience {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.about .container .about-experience .experience-card {
+  border: 2px solid var(--green1);
+  width: 200px;
+  height: 120px;
+  padding: 10px 12px;
+  background-color: var(--main-color);
+  color: var(--green1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .container .about-experience .experience-card h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin-bottom: 0.5em;
+}
+
+.about .container .about-experience .experience-card p {
+  font-size: 1.1em;
+}
+
+.about .container .skill {
+  margin-top: 3em;
+}
+
+.about .container .skill h3 {
+  color: var(--putihbiru);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.about .container .skill .progress-bars {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1.5rem;
+  margin-top: 2em;
+}
+
+.about .container .skill .progress-bars .progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .container .skill .progress-bars .progress-bar p {
+  color: var(--putihbiru);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con {
+  display: flex;
+  align-items: center;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con .progress {
+  width: 100%;
+  height: 0.45rem;
+  background-color: var(--hitammuda);
+  position: relative;
+  margin-left: 1rem;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con .progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--green1);
+  transition: all 0.4s ease-in-out;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con .progress span.html {
+  width: 80%;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con .progress span.javascript {
+  width: 80%;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con .progress span.node {
+  width: 60%;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con .progress span.css {
+  width: 70%;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con .progress span.bootstrap {
+  width: 90%;
+}
+
+.about .container .skill .progress-bars .progress-bar .progress-con .progress span.php {
+  width: 80%;
+}
+
+.about .container .experience {
+  margin-top: 3em;
+}
+
+.about .container .experience h3 {
+  color: var(--putihbiru);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.about .container .experience .experience-container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .container .experience .experience-container .logo-experience {
+  display: inline-block;
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: var(--green1);
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--putihbiru);
+  margin-right: 2em;
+}
+
+.about .container .experience .experience-container .experience-card {
+  color: var(--putihbiru);
+}
+
+.about .container .experience .experience-container .experience-card .year {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  margin-bottom: 0.4em;
+}
+
+.about .container .experience .experience-container .experience-card h5 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.about .container .experience .experience-container .experience-card .text {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+/* About */
