@@ -160,24 +160,6 @@ section {
   position: relative;
 }
 
-.home .container .home-text h1 span::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: var(--main-color);
-  border-left: 2px solid var(--green1);
-  animation: typing 2s steps(10) infinite;
-}
-
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -10px 0 10px;
-  }
-}
-
 .home .container .home-text h3 {
   color: var(--putihbiru);
   margin-top: 0.2em;
@@ -385,3 +367,134 @@ section {
 }
 
 /* About */
+
+/* Myportfolio */
+.portfolio .container h2 {
+  text-align: center;
+  color: var(--putihbiru);
+  font-size: 1.8em;
+}
+
+.portfolio .container .portfolio-filter {
+  margin: 2em 0;
+  color: var(--putihbiru);
+  text-align: center;
+}
+
+.portfolio .container .portfolio-filter .portfolio-item {
+  cursor: pointer;
+  padding: 0.25em 0.75em;
+  font-weight: 400;
+  border-radius: 0.5em;
+}
+
+.portfolio .container .portfolio-filter .active-portfolio {
+  background-color: var(--green1);
+}
+
+.portfolio .container .portfolio-container {
+  margin-top: 5em;
+}
+
+.portfolio .container .portfolio-container .portfolio-card {
+  background-color: var(--green1);
+  padding: 1.25em;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+}
+
+.portfolio .container .portfolio-container .portfolio-card img {
+  border-radius: 0.5em;
+}
+
+.portfolio .container .portfolio-container .portfolio-card h3 {
+  margin: 1em 0 0.5em;
+  font-size: 1.5em;
+  color: var(--putihbiru);
+}
+
+.portfolio .container .portfolio-container .portfolio-card .portfolio-button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.portfolio .container .portfolio-container .portfolio-card .portfolio-button i {
+  font-size: 1.3em;
+  color: var(--putihbiru);
+  transition: 0.3s;
+}
+
+.portfolio .container .portfolio-container .portfolio-card .portfolio-button:hover i {
+  transform: translateX(0.25em);
+}
+
+.portfolio .container .portfolio-container .portfolio-card .portfolio-button h4 {
+  color: var(--putihbiru);
+}
+
+.portfolio .container .portfolio-container .portfolio-card .portfolio-item-details {
+  display: none;
+}
+
+/* End Myportfolio */
+
+/* Contact */
+.contact h2 {
+  font-size: 1.8em;
+  color: var(--putihbiru);
+  text-align: center;
+}
+
+.contact .container .contact-social {
+  margin-top: 3em;
+}
+
+.contact .container .contact-social .social-link {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: 0 0 1.6em 0;
+}
+
+.contact .container .contact-social .social-link a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: var(--green1);
+  text-align: center;
+  font-size: 1em;
+  color: var(--putihbiru);
+}
+
+.contact .container .contact-social .social-link .social-text {
+  color: var(--putihbiru);
+}
+
+.contact .container .contact-social .social-link .social-text h5 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.contact .container .contact-social .social-link .social-text p {
+  font-size: 0.8em;
+  color: var(--hitammuda);
+}
+
+.contact .container .contact-suggest {
+  margin-top: 2em;
+}
+
+.contact .container .contact-suggest form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .container .contact-suggest form .input-group {
+  display: flex;
+  flex-direction: column;
+}
+/* End Contact */

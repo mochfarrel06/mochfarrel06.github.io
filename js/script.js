@@ -26,3 +26,13 @@ document.querySelectorAll('.nav-link').forEach((n) =>
     navbar.classList.remove('active');
   })
 );
+
+// Menu portfolio
+let mixer = mixitup('.portfolio-container', {
+  selectors: {
+    target: '.portfolio-card',
+  },
+  animation: {
+    duration: 300,
+  },
+});
