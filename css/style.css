@@ -162,12 +162,12 @@ section {
 .home .container .home-text h3 {
   color: var(--putihbiru);
   margin-top: 0.2em;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .home .container .home-text p {
   color: var(--putihbiru);
-  font-size: 0.8em;
+  font-size: 1em;
   margin-top: 1.5em;
 }
 
@@ -178,7 +178,8 @@ section {
   padding: 1em 1.4em;
   background-color: var(--green1);
   border-radius: 10px;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
 
@@ -206,7 +207,7 @@ section {
 .about .container .about-information p {
   color: var(--putihbiru);
   margin-bottom: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .about .container .about-experience {
@@ -219,7 +220,7 @@ section {
 
 .about .container .about-experience .experience-card {
   border: 2px solid var(--green1);
-  width: 200px;
+  width: 100%;
   height: 120px;
   padding: 10px 12px;
   background-color: var(--main-color);
@@ -332,17 +333,14 @@ section {
   justify-content: space-between;
 }
 
-.about .container .experience .experience-container .logo-experience {
+.about .container .experience .experience-container .logo-experience i {
   display: inline-block;
-  width: 140px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
+  padding: 10px;
+  border-radius: 100%;
   background-color: var(--green1);
-  text-align: center;
   font-size: 1.2em;
   color: var(--putihbiru);
-  margin-right: 2em;
+  margin-right: 1em;
 }
 
 .about .container .experience .experience-container .experience-card {
@@ -408,7 +406,7 @@ section {
 
 .portfolio .container .portfolio-container .portfolio-card h3 {
   margin: 1em 0 0.5em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: var(--putihbiru);
 }
 
@@ -430,6 +428,7 @@ section {
 
 .portfolio .container .portfolio-container .portfolio-card .portfolio-button h4 {
   color: var(--putihbiru);
+  font-size: 0.8em;
 }
 
 .portfolio .container .portfolio-container .portfolio-card .portfolio-item-details {
@@ -495,5 +494,55 @@ section {
 .contact .container .contact-suggest form .input-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.contact .container .contact-suggest form .input-group label {
+  font-size: 1.1em;
+  color: var(--green1);
+  margin-bottom: 0.3em;
+}
+
+.contact .container .contact-suggest form .input-group input {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid var(--green1);
+  background-color: var(--main-color);
+  color: var(--putihbiru);
+  outline-style: none;
+}
+
+.contact .container .contact-suggest form button {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--green1);
+  color: var(--putihbiru);
+  font-size: 1.1em;
+}
+
+.contact .container .contact-suggest form .input-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid var(--green1);
+  background-color: var(--main-color);
+  color: var(--putihbiru);
+  outline-style: none;
+}
+
+footer {
+  padding: 2em 2em;
+  width: 100%;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: normal;
+  color: var(--putihbiru);
 }
 /* End Contact */
