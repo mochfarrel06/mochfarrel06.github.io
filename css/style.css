@@ -128,6 +128,7 @@ li {
 section {
   width: 100%;
   padding: 5em 2em;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Home */
@@ -136,12 +137,17 @@ section {
   margin-top: 4em;
 }
 
+.home .container {
+  width: 100%;
+}
+
 .home .container .home-img {
   text-align: center;
 }
 
 .home .container .home-img img {
   width: 70%;
+  transition: all 0.3s ease-in-out;
 }
 
 .home .container .home-text {
@@ -152,11 +158,11 @@ section {
   font-size: 2.5em;
   color: var(--putihbiru);
   letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 .home .container .home-text h1 span {
   color: var(--green1);
-  position: relative;
 }
 
 .home .container .home-text h3 {
@@ -198,10 +204,11 @@ section {
 
 .about .container .about-information h4 {
   color: var(--putihbiru);
-  text-transform: uppercase;
   margin-top: 4em;
   letter-spacing: 1px;
   margin-bottom: 1.8em;
+  font-size: 1.2em;
+  transition: all 0.3s ease-in;
 }
 
 .about .container .about-information p {
@@ -250,6 +257,7 @@ section {
   color: var(--putihbiru);
   text-align: center;
   font-size: 1.2em;
+  transition: all 0.3s ease-in-out;
 }
 
 .about .container .skill .progress-bars {
@@ -325,6 +333,7 @@ section {
   color: var(--putihbiru);
   text-align: center;
   font-size: 1.2em;
+  transition: all 0.3s ease-in-out;
 }
 
 .about .container .experience .experience-container {
@@ -395,9 +404,11 @@ section {
 
 .portfolio .container .portfolio-container .portfolio-card {
   background-color: var(--green1);
-  padding: 1.25em;
+  width: 100%;
+  padding: 1em;
   border-radius: 0.5em;
   margin-bottom: 2em;
+  transition: all 0.3s ease-in-out;
 }
 
 .portfolio .container .portfolio-container .portfolio-card img {
@@ -522,6 +533,7 @@ section {
   background-color: var(--green1);
   color: var(--putihbiru);
   font-size: 1.1em;
+  margin-top: 1em;
 }
 
 .contact .container .contact-suggest form .input-group textarea {
@@ -546,3 +558,148 @@ footer .footer-bottom {
   color: var(--putihbiru);
 }
 /* End Contact */
+
+/* Start size 571 */
+@media screen and (min-width: 571px) {
+  .home .container .home-text h1 {
+    font-size: 2.8em;
+    transition: all 0.3s ease-in-out;
+  }
+  .home .container .home-img img {
+    width: 60%;
+    transition: all 0.3s ease-in-out;
+  }
+  .home .container .home-text p {
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+  }
+  .about .container .about-information p {
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+  }
+  .about .container .about-information h4 {
+    font-size: 1.3em;
+  }
+  .about .container .experience h3 {
+    font-size: 1.3em;
+  }
+  .about .container .skill h3 {
+    font-size: 1.3em;
+  }
+  .portfolio .container .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio .container .portfolio-container .portfolio-card {
+    width: 70%;
+    transition: all 0.3s ease-in-out;
+  }
+}
+/* End size 571 */
+
+/* Start size tablet */
+@media screen and (min-width: 768px) {
+  .about .container .about-information p {
+    font-size: 1.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  .about .container .about-experience .experience-card {
+    width: 40%;
+  }
+  .portfolio .container .portfolio-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+  }
+  .portfolio .container .portfolio-container .portfolio-card {
+    width: 45%;
+  }
+  .home .container .home-img img {
+    transition: all 0.3s ease-in-out;
+  }
+}
+/* End size tablet */
+
+/* Start size desktop */
+@media screen and (min-width: 992px) {
+  .home .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home .container .home-img img {
+    width: 100%;
+  }
+  .home .container .home-text h1 {
+    font-size: 3.1em;
+  }
+  .navbar .container .hamburger {
+    display: none;
+  }
+  .navbar .container nav {
+    /* display: flex; */
+    right: 0;
+    top: -24px;
+    gap: 0;
+    background-color: transparent;
+    width: 57%;
+  }
+  .navbar .container nav ul {
+    display: flex;
+  }
+}
+/* End size desktop */
+
+/* Start size 1056 px */
+@media screen and (min-width: 1056px) {
+  .navbar .container nav {
+    width: 55%;
+  }
+}
+/* End size 1056 px */
+
+/* Start size 1116 px */
+@media screen and (min-width: 1116px) {
+  .navbar .container nav {
+    width: 52%;
+  }
+}
+/* End size 1116 px */
+
+/* Start size 1214 px */
+@media screen and (min-width: 1214px) {
+  .navbar .container nav {
+    width: 48%;
+  }
+  section {
+    padding: 4em 7em;
+  }
+}
+/* End size 1214 px */
+
+/* Start size 1297 px */
+@media screen and (min-width: 1297px) {
+  .navbar .container nav {
+    width: 45%;
+  }
+}
+/* End size 1297 px */
+
+/* Start size 1388 px */
+@media screen and (min-width: 1388px) {
+  .navbar .container nav {
+    width: 43%;
+  }
+}
+/* End size 1388 px */
+
+/* Start size 1488 px */
+@media screen and (min-width: 1488px) {
+  .navbar .container nav {
+    width: 40%;
+  }
+}
+/* End size 1488 px */
