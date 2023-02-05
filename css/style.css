@@ -49,7 +49,7 @@ li {
 }
 
 .navbar .container .logo {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: var(--green1);
   font-family: 'Jost', sans-serif;
   font-weight: bold;
@@ -155,7 +155,7 @@ section {
 }
 
 .home .container .home-text h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   color: var(--putihbiru);
   letter-spacing: 2px;
   transition: all 0.3s ease-in-out;
@@ -168,7 +168,7 @@ section {
 .home .container .home-text h3 {
   color: var(--putihbiru);
   margin-top: 0.2em;
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 
 .home .container .home-text p {
