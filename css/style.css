@@ -113,27 +113,20 @@ li {
   right: 0;
 }
 
-/* .navbar .container .cta-menu {
-  font-size: 1.2rem;
-  color: var(--putihbiru);
-  text-align: center;
-  display: inline-block;
-} */
-
 .scroll-navbar {
   background-color: #082436;
 }
 
-/* Main-conten */
+/* Start main-content */
 section {
   width: 100%;
   padding: 5em 2em;
   transition: all 0.3s ease-in-out;
 }
+/* End main-content */
 
-/* Home */
+/* Start home */
 .home {
-  /* background-color: var(--putihbiru); */
   margin-top: 4em;
 }
 
@@ -168,12 +161,12 @@ section {
 .home .container .home-text h3 {
   color: var(--putihbiru);
   margin-top: 0.2em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .home .container .home-text p {
   color: var(--putihbiru);
-  font-size: 1em;
+  font-size: 0.8em;
   margin-top: 1.5em;
 }
 
@@ -184,7 +177,7 @@ section {
   padding: 1em 1.4em;
   background-color: var(--green1);
   border-radius: 10px;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
@@ -193,13 +186,14 @@ section {
   background-color: var(--green2);
   color: var(--main-color);
 }
-
 /* End Home */
 
+/* Start About */
 .about .container h2 {
   text-align: center;
   color: var(--putihbiru);
-  font-size: 1.8em;
+  font-size: 1.6em;
+  letter-spacing: 1px;
 }
 
 .about .container .about-information h4 {
@@ -207,7 +201,7 @@ section {
   margin-top: 4em;
   letter-spacing: 1px;
   margin-bottom: 1.8em;
-  font-size: 1.2em;
+  font-size: 1.1em;
   transition: all 0.3s ease-in;
 }
 
@@ -240,7 +234,7 @@ section {
 
 .about .container .about-experience .experience-card h3 {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
   letter-spacing: 2px;
   margin-bottom: 0.5em;
 }
@@ -256,7 +250,7 @@ section {
 .about .container .skill h3 {
   color: var(--putihbiru);
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.1em;
   transition: all 0.3s ease-in-out;
 }
 
@@ -332,7 +326,7 @@ section {
 .about .container .experience h3 {
   color: var(--putihbiru);
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.1em;
   transition: all 0.3s ease-in-out;
 }
 
@@ -363,22 +357,23 @@ section {
 }
 
 .about .container .experience .experience-container .experience-card h5 {
-  font-size: 1.1em;
+  font-size: 0.9em;
   margin-bottom: 1em;
+  letter-spacing: 1px;
 }
 
 .about .container .experience .experience-container .experience-card .text {
   font-size: 0.8em;
   letter-spacing: 1px;
 }
-
-/* About */
+/* End about */
 
 /* Myportfolio */
 .portfolio .container h2 {
   text-align: center;
   color: var(--putihbiru);
-  font-size: 1.8em;
+  font-size: 1.6em;
+  letter-spacing: 1px;
 }
 
 .portfolio .container .portfolio-filter {
@@ -417,7 +412,7 @@ section {
 
 .portfolio .container .portfolio-container .portfolio-card h3 {
   margin: 1em 0 0.5em;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: var(--putihbiru);
 }
 
@@ -448,11 +443,12 @@ section {
 
 /* End Myportfolio */
 
-/* Contact */
+/* Start Contact */
 .contact h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: var(--putihbiru);
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .contact .container .contact-social {
@@ -483,7 +479,7 @@ section {
 }
 
 .contact .container .contact-social .social-link .social-text h5 {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   margin-bottom: 0.2em;
 }
@@ -509,7 +505,7 @@ section {
 }
 
 .contact .container .contact-suggest form .input-group label {
-  font-size: 1.1em;
+  font-size: 0.9em;
   color: var(--green1);
   margin-bottom: 0.3em;
 }
@@ -532,7 +528,7 @@ section {
   border: none;
   background-color: var(--green1);
   color: var(--putihbiru);
-  font-size: 1.1em;
+  font-size: 1em;
   margin-top: 1em;
 }
 
@@ -545,7 +541,9 @@ section {
   color: var(--putihbiru);
   outline-style: none;
 }
+/* End Contact */
 
+/* Start Footer */
 footer {
   padding: 2em 2em;
   width: 100%;
@@ -553,16 +551,16 @@ footer {
 
 footer .footer-bottom {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: normal;
   color: var(--putihbiru);
 }
-/* End Contact */
+/* End Footer */
 
 /* Start size 571 */
 @media screen and (min-width: 571px) {
   .home .container .home-text h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     transition: all 0.3s ease-in-out;
   }
   .home .container .home-img img {
@@ -570,15 +568,15 @@ footer .footer-bottom {
     transition: all 0.3s ease-in-out;
   }
   .home .container .home-text p {
-    font-size: 1.1em;
+    font-size: 1em;
     transition: all 0.3s ease-in-out;
   }
   .about .container .about-information p {
-    font-size: 1.1em;
+    font-size: 1em;
     transition: all 0.3s ease-in-out;
   }
   .about .container .about-information h4 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   .about .container .experience h3 {
     font-size: 1.3em;
@@ -600,8 +598,24 @@ footer .footer-bottom {
 
 /* Start size tablet */
 @media screen and (min-width: 768px) {
+  .home .container .home-text h1 {
+    font-size: 3em;
+  }
+  .home .container .home-text h3 {
+    font-size: 1.2em;
+  }
+  .home .container .home-text p {
+    font-size: 1.1em;
+  }
+  .home .container .home-img img {
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  .home .container .home-text a {
+    font-size: 1em;
+  }
   .about .container .about-information p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     transition: all 0.3s ease-in-out;
   }
   .about .container .about-experience .experience-card {
